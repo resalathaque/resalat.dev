@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="/css/main.css">
+
+        <title>Resalat Haque | Portfolio</title>
+
+    </head>
+
+    <body>
+        <header>
+            <a class="hero" href="/">rhprodhan</a>
+
+            <a id="toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <nav>
+                <div>Somthing about me..</div>
+                <ul>
+                    <li><a data-scroll href="#whoAmI">Who am I ?</a></li>
+                    <li><a data-scroll href="#WhatIveLearned">What I've Learned ?</a></li>
+                    <li><a data-scroll href="#whatIveDone">What I've done ?</a></li>
+                    <li><a data-scroll href="#whatIThink">What I think</a></li>
+                    <li><a data-scroll href="#knockMe">Knock Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="whoAmI"
+            >
+                <h1>I'm Reslat Haque</h1>
+                <p>A self-taught full-stack web developer from Bangladesh</p>
+            </section>
+
+            <section id="WhatIveLearned">
+                
+            </section>
+
+            <section id="whatIveDone">
+                <ul>
+                    <li><a href="https://lastmob.com">Lastmob.com</a></li>
+                    <li><a href="http://pinfinder.in">PINFinder.IN</a></li>
+                    <li><a href="https://sobjobs.com">Sobjobs.com</a></li>
+                </ul>
+            </section>
+
+            <section id="whatIThink">
+
+            </section>
+
+            <section id="knockMe">
+                <ul>
+                    <li class="email"><a href="mailto:resalat.haque.is@gmail.com?Subject=Hello">Email</a></li>
+                    <li class="facebook"><a href="https://fb.me/resalat.haque.prodhan">Facebook</a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/resalat.haque">Instagram</a></li>
+                </ul>
+            </section>
+            
+        </main>
+        
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.2/typeit.min.js"></script>
+
+    <script>
+        $(function() {
+            let scrollToSection = function(event) {
+                event.preventDefault();
+                var $section = $($(this).attr('href'));
+
+                $('html, body').animate({
+                    scrollTop: $section.offset().top
+                }, 500);
+            }
+            $('[data-scroll]').on('click', scrollToSection);
+
+            // toggle menu
+            $("#toggler").on("click", function() {
+                $("header nav").toggleClass("active");
+            });
+            $("header nav").on("click", function() {
+                if ($("header nav").hasClass("active")) {
+                    $("header nav").removeClass("active");
+                }
+            });
+
+            new TypeIt('#whoAmI p', {
+                speed: 150,
+                waitUntilVisible: true
+            }).go();
+        });
+    </script>
+
+</html>
