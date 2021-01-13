@@ -253,6 +253,23 @@ section:nth-child(5) {
   font-size: 16px;
 }
 
+#WhatIveLearned ul li {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#WhatIveLearned ul li ul li {
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#WhatIveLearned ul li ul li:before {
+  content: '- ';
+}
+
 #knockMe ul li {
   margin: 10px 0;
   font-size: 2em;
