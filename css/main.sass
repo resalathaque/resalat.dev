@@ -162,6 +162,41 @@ section
             ul li:before
                     content: '- '
 
+#whatIveDone
+    ul
+        display: flex
+        flex-wrap: wrap
+        font-slize: 18px
+
+        // @media only screen and (max-width: $mobile-width)
+        //     display: flexbox
+
+        a
+            color: #333
+    
+        li
+            max-width: 450px
+            background: #fff
+            padding: 10px
+            margin: 10px
+            border-radius: 5px
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+
+            &:hover
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+            header
+                font-size: 1.8em
+                padding: 15px 8px
+            img
+                max-width: 100%
+                border-redious: 8px
+                filter: drop-shadow(5px 5px 3px #ddd)
+            footer
+                font-size: 17px
+                padding: 12px 8px
+
 #knockMe
     ul li
         margin: 10px 0

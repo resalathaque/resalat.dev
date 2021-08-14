@@ -270,6 +270,53 @@ section:nth-child(5) {
   content: '- ';
 }
 
+#whatIveDone ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-slize: 18px;
+}
+
+#whatIveDone ul a {
+  color: #333;
+}
+
+#whatIveDone ul li {
+  max-width: 450px;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#whatIveDone ul li:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#whatIveDone ul li header {
+  font-size: 1.8em;
+  padding: 15px 8px;
+}
+
+#whatIveDone ul li img {
+  max-width: 100%;
+  border-redious: 8px;
+  -webkit-filter: drop-shadow(5px 5px 3px #ddd);
+          filter: drop-shadow(5px 5px 3px #ddd);
+}
+
+#whatIveDone ul li footer {
+  font-size: 17px;
+  padding: 12px 8px;
+}
+
 #knockMe ul li {
   margin: 10px 0;
   font-size: 2em;
