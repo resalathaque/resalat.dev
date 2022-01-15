@@ -1,2 +1,2 @@
-# kiash.io
-Potfolio
+# RESALAT.DEV
+A Simple potfolio website
